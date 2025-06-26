@@ -14,8 +14,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ciptateknikvalve.com/" />
   <meta property="og:image" content="https://ciptateknikvalve.com/gambar/" />
-  <link rel="apple-touch-icon" href="gambar/Screenshot_2025-06-25_221917-removebg-preview.png">
   <meta name="theme-color" content="#007bff" />
+  <link rel="apple-touch-icon" href="gambar/Screenshot_2025-06-25_221917-removebg-preview.png">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -40,24 +40,13 @@
       padding: 5rem 0;
       text-align: center;
     }
-    .banner h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    .banner p {
-      font-size: 1.2rem;
-    }
     .btn-custom {
       background-color: #ffc107;
       color: #000;
       font-weight: 600;
     }
-    .brand-track img {
-      filter: grayscale(0);
-      transition: transform 0.3s;
-    }
-    .brand-track img:hover {
-      transform: scale(1.1);
+    .card img {
+      cursor: pointer;
     }
     footer {
       background: #343a40;
@@ -105,48 +94,68 @@
     <div class="container">
       <h3 class="section-title text-center">Produk Unggulan Kami</h3>
       <div class="row g-4">
+        <!-- Produk 1 -->
         <div class="col-md-4" data-aos="zoom-in">
           <div class="card shadow-sm">
-            <img src="gambar/IMG-20250626-WA0635.jpg" class="card-img-top" alt="Gate Valve">
+            <img src="gambar/IMG-20250626-WA0635.jpg" class="card-img-top" alt="Gate Valve" data-bs-toggle="modal" data-bs-target="#modal1">
             <div class="card-body">
               <h5 class="card-title">Gate Valve</h5>
               <p class="card-text">Valve berkualitas tinggi untuk industri.</p>
             </div>
           </div>
         </div>
+
+        <!-- Produk 2 -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="card shadow-sm">
-            <img src="gambar/IMG-20250626-WA0653.jpg" class="card-img-top" alt="Ball Valve">
+            <img src="gambar/IMG-20250626-WA0653.jpg" class="card-img-top" alt="Ball Valve" data-bs-toggle="modal" data-bs-target="#modal2">
             <div class="card-body">
               <h5 class="card-title">Ball Valve</h5>
               <p class="card-text">Ball valve dengan performa tinggi dan tahan lama.</p>
             </div>
           </div>
         </div>
-        <div class="container">
-      <h3 class="section-title text-center">Produk Unggulan Kami</h3>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="zoom-in">
+
+        <!-- Produk 3 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
           <div class="card shadow-sm">
-            <img src="gambar/IMG-20250626-WA0650.jpg" class="card-img-top" alt="Gate Valve">
+            <img src="gambar/IMG-20250626-WA0650.jpg" class="card-img-top" alt="Globe Valve" data-bs-toggle="modal" data-bs-target="#modal3">
             <div class="card-body">
-              <h5 class="card-title">Gate Valve</h5>
-              <p class="card-text">Valve berkualitas tinggi untuk industri.</p>
+              <h5 class="card-title">Globe Valve</h5>
+              <p class="card-text">Valve dengan kontrol aliran presisi tinggi.</p>
             </div>
-          </div><!-- Tambah lebih banyak produk di sini -->
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- MODAL UNTUK PERBESAR GAMBAR -->
+  <div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <img src="gambar/IMG-20250626-WA0635.jpg" class="img-fluid w-100" alt="Gate Valve">
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <img src="gambar/IMG-20250626-WA0653.jpg" class="img-fluid w-100" alt="Ball Valve">
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <img src="gambar/IMG-20250626-WA0650.jpg" class="img-fluid w-100" alt="Globe Valve">
+    </div>
+  </div>
+
   <section class="py-5 bg-light">
     <div class="container text-center">
       <h3 class="section-title">Merek yang Kami Dukung</h3>
-      <div class="brand-marquee overflow-hidden position-relative">
-        <div class="brand-track d-flex align-items-center gap-5 justify-content-center">
-          <img src="https://w7.pngwing.com/pngs/746/254/png-transparent-kitz-hd-logo.png" alt="Kitz" style="height: 60px;">
-          <img src="https://kcbkk.com/wp-content/uploads/2020/01/yoshitake-logo-1.png" alt="Yoshitake" style="height: 60px;">
-          <!-- Tambahkan lagi jika perlu -->
-        </div>
+      <div class="brand-track d-flex align-items-center gap-5 justify-content-center">
+        <img src="https://w7.pngwing.com/pngs/746/254/png-transparent-kitz-hd-logo.png" alt="Kitz" style="height: 60px;">
+        <img src="https://kcbkk.com/wp-content/uploads/2020/01/yoshitake-logo-1.png" alt="Yoshitake" style="height: 60px;">
+        <!-- Tambahkan lagi jika perlu -->
       </div>
     </div>
   </section>
@@ -161,20 +170,4 @@
           <p>WhatsApp: <a href="https://wa.me/628989619222">0898 9619 222</a></p>
         </div>
         <div class="col-md-6 text-end">
-          <h5>Temukan Kami</h5>
-          <a href="#" target="_blank">Tokopedia</a><br>
-          <a href="#" target="_blank">Facebook</a>
-        </div>
-      </div>
-      <hr>
-      <p class="text-center">&copy; 2025 PT. CIPTA TALENTA VALVE. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-</html>
+          <h5>Temukan
