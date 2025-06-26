@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pesonagolden.netlify.app/sitemap.xml
+Sitemap: https://ciptatalenta.netlify.app/sitemap.xml
