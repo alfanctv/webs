@@ -160,13 +160,44 @@
     </div>
   </div>
 
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h3 class="section-title">Merek yang Kami Dukung</h3>
-      <div class="brand-track d-flex align-items-center gap-5 justify-content-center">
+ <section class="py-5 bg-light">
+  <div class="container text-center">
+    <h3 class="section-title">Merek yang Kami Dukung</h3>
+    <div class="brand-slider-wrapper overflow-hidden position-relative">
+      <div class="brand-slider d-flex align-items-center gap-5">
+        <!-- Duplikat agar animasi looping tampak seamless -->
+        <img src="https://w7.pngwing.com/pngs/746/254/png-transparent-kitz-hd-logo.png" alt="Kitz" style="height: 60px;">
+        <img src="https://kcbkk.com/wp-content/uploads/2020/01/yoshitake-logo-1.png" alt="Yoshitake" style="height: 60px;">
         <img src="https://w7.pngwing.com/pngs/746/254/png-transparent-kitz-hd-logo.png" alt="Kitz" style="height: 60px;">
         <img src="https://kcbkk.com/wp-content/uploads/2020/01/yoshitake-logo-1.png" alt="Yoshitake" style="height: 60px;">
       </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.brand-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-slider {
+  display: flex;
+  gap: 5rem;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
     </div>
   </section>
 
